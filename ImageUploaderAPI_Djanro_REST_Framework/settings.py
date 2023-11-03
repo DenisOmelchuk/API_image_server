@@ -136,11 +136,3 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
-
-# REDIS configuration
-
-CELERY_BROKER_URL = 'redis://default:HKKdPMhjB4f42jbI53kGg3hHcL3DnbFF@monorail.proxy.rlwy.net:28493'
-
-CELERY_ACCEPT_CONTENT = ['json']
-
-CELERY_TASK_SERIALIZER = 'json'

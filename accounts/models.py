@@ -101,7 +101,7 @@ class ExpiringLink(models.Model):
         time_difference = current_time - created_at_timestamp
         return self.time_to_expired < time_difference
 
-
+#
 # @receiver(pre_save, sender=UserImage)
 # def create_thumbnails(sender, instance, *args, **kwargs):
 #     image_name, image_extension = os.path.splitext(os.path.basename(instance.original_image.name))
