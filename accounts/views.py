@@ -14,11 +14,6 @@ from rest_framework.renderers import JSONRenderer, TemplateHTMLRenderer
 from .tasks import timesleep
 
 
-def index(request):
-    timesleep.dalay(5)
-    return HttpResponse("works")
-
-
 class ImageCreateAPIView(generics.CreateAPIView):
     # permission_classes = [IsAuthenticated,]
     serializer_class = UploadImageSerializer
